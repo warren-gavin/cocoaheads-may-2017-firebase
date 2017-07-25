@@ -1,0 +1,20 @@
+{
+    "rules": {
+        ".read": "auth != null",
+        ".write": "auth != null",
+        "sessions" : {
+            "$id_0": {
+                "$id_1": {
+                    "data": {
+                        "$id_2": {
+                            ".validate": "newData.isNumber()"
+                        }
+                    }
+                }
+            }
+        },
+        "$other": {
+            ".validate": "false"
+        }
+    }
+}
